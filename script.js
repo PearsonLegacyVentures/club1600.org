@@ -48,17 +48,80 @@ galleryButtons.forEach(btn=>btn.addEventListener('click',()=>{
 // The 62 archive
 const presidentGrid=document.querySelector('#president-grid');
 if(presidentGrid){
-  const known={
-    1:{name:'Ernest T. Strachan',term:'Founding President'},
-    62:{name:'Azano P. Major',term:'2026–2027'}
-  };
-  for(let i=1;i<=62;i++){
-    const item=known[i];
+  const presidents=[
+    {n:1,name:'Ernest T. Strachan',term:'1969'},
+    {n:2,name:'Alfred T. Maycock',term:'1970'},
+    {n:3,name:'E. Pedro Roberts',term:'1971'},
+    {n:4,name:'O. H. Michael Smith',term:'1972'},
+    {n:5,name:'Patrick Bosfield',term:'1973'},
+    {n:6,name:'Lester M. Gibson',term:'1974'},
+    {n:7,name:'James A. Rahming',term:'1975'},
+    {n:8,name:'Clifford Lockhart',term:'1975'},
+    {n:9,name:'Edward J. Carey',term:'1976'},
+    {n:10,name:'L. Malachi Lundy',term:'1977'},
+    {n:11,name:'Christopher V. Stuart',term:'1978'},
+    {n:12,name:'Philip E. Davis',term:'1979'},
+    {n:13,name:'Samuel J. Mitchel',term:'1980'},
+    {n:14,name:'Samuel J. Bain',term:'1981',note:'Served 2 months'},
+    {n:15,name:'Bernard F. Hanna',term:'1981',note:'Served 10 months'},
+    {n:16,name:'Kingsley S. Munroe',term:'1982',note:'Served 10 months'},
+    {n:17,name:'Gordon Soles',term:'1982',note:'Served 2 months'},
+    {n:18,name:'Clement Foster',term:'1983'},
+    {n:19,name:'John Adderley',term:'1984'},
+    {n:20,name:'James C. Bostwick',term:'1985'},
+    {n:21,name:'Keith L. Major',term:'1986'},
+    {n:22,name:'Michael Cooper',term:'1987'},
+    {n:23,name:'L. Edgar Moxey',term:'1988'},
+    {n:24,name:'Kerry Poitier',term:'1989'},
+    {n:25,name:'Richard L. Bootle',term:'1990'},
+    {n:26,name:'Charles W. Deveaux',term:'1991'},
+    {n:27,name:'Bernard F. Hanna',term:'1992',note:'Served six months as Toastmasters International changed its fiscal year from Jan–Dec to Jul–Jun.'},
+    {n:28,name:'Harry E. Kemp',term:'1992–1993'},
+    {n:29,name:'Arlington A. Hunter',term:'1993–1994'},
+    {n:30,name:'Caldwell E. Pratt',term:'1994–1995'},
+    {n:31,name:'Lambert N. Rahming',term:'1995–1996'},
+    {n:32,name:'Jamal R. Hepburn',term:'1996–1997'},
+    {n:33,name:'Anthony J. Longley',term:'1997–1998'},
+    {n:34,name:'Dwain A. Wallace',term:'1998–1999'},
+    {n:35,name:'Dwayne A. Davis',term:'1999–2000'},
+    {n:36,name:'Roderick C. Colebrook',term:'2000–2001'},
+    {n:37,name:'Cyprian A. Gibson',term:'2001–2002'},
+    {n:38,name:'Dwight R. Burrows',term:'2002–2003'},
+    {n:39,name:'Jevon McIntosh',term:'2003–2004'},
+    {n:40,name:'George Taylor',term:'2004–2005'},
+    {n:41,name:'Charles G. Saunders Jr.',term:'2005–2006'},
+    {n:42,name:'Delmaro C. Duncombe',term:'2006–2007'},
+    {n:43,name:'Chato R. Outten',term:'2007–2008'},
+    {n:44,name:'Dion J. T. Godet',term:'2008–2009'},
+    {n:45,name:'Craig F. Ferguson',term:'2009–2010'},
+    {n:46,name:'Ernesto Gongora',term:'2010–2011'},
+    {n:47,name:'Charles M. Newbold III',term:'2011–2012'},
+    {n:48,name:'Pedro A. Young',term:'2012–2013'},
+    {n:49,name:'Franklyn G. Winder',term:'2013–2014'},
+    {n:50,name:'Valentino Munroe',term:'2014–2015'},
+    {n:51,name:'Carlos E. Palacious',term:'2015–2016'},
+    {n:52,name:'Chervez W. Brown',term:'2016–2017'},
+    {n:53,name:'Dion B. Knowles',term:'2017–2018'},
+    {n:54,name:'Osbourne Moxey',term:'2018–2019'},
+    {n:55,name:'Ancin B. Munnings',term:'2019–2020'},
+    {n:56,name:'Shacoy Mullings',term:'2020–2021'},
+    {n:57,name:'Devaughn J. Taylor',term:'2021–2022'},
+    {n:58,name:'Ray-Don K. Poitier',term:'2022–2023'},
+    {n:59,name:'Stefan C. Bonimy',term:'2023–2024'},
+    {n:60,name:'Camron K. Reckley',term:'2024–2025'},
+    {n:61,name:'Jamaal Cooper',term:'2025–2026'},
+    {n:62,name:'Azano P. Major',term:'2026–2027',photo:'assets/azano-cutout.webp'}
+  ];
+  const initials=name=>name.replace(/\b(Jr\.|III|II)\b/g,'').split(/\s+/).filter(Boolean).map(part=>part.replace(/[^A-Za-z]/g,'')[0]).filter(Boolean).slice(0,2).join('');
+  presidents.forEach(item=>{
     const card=document.createElement('article');
-    card.className='president-tile'+(item?' known':'');
-    card.innerHTML=`<span class="num">${String(i).padStart(2,'0')}</span><small>${item?'ARCHIVE ENTRY':'HISTORICAL RECORD'}</small><h3>${item?item.name:'Name to be added'}</h3><p>${item?item.term:'Term, portrait and contribution to be digitized.'}</p>`;
+    card.className='president-tile'+(item.photo?' has-photo':'');
+    const portrait=item.photo
+      ? `<div class="president-portrait"><img src="${item.photo}" alt="${item.name}, ${item.term} President of Club 1600" loading="lazy"></div>`
+      : `<div class="president-portrait portrait-pending"><span>${initials(item.name)}</span><small>PORTRAIT ARCHIVE</small></div>`;
+    card.innerHTML=`${portrait}<div class="president-tile-copy"><span class="num">${String(item.n).padStart(2,'0')}</span><small>${item.term}</small><h3>${item.name}</h3>${item.note?`<p>${item.note}</p>`:''}</div>`;
     presidentGrid.appendChild(card);
-  }
+  });
 }
 
 // Speech Lab
