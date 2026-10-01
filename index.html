@@ -12,9 +12,12 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav" id="top">
-  <a class="wordmark" href="index.html"><span class="tm-dot"></span><span><strong>CLUB 1600</strong><small>FIRST BAHAMAS BRANCH</small></span></a>
+  <a class="brand-lockup" href="index.html" aria-label="Club 1600 home">
+    <img class="ti-logo" src="assets/toastmasters-logo.webp" alt="Toastmasters International">
+    <span class="club-lockup"><strong>CLUB 1600</strong><small>FIRST BAHAMAS BRANCH</small></span>
+  </a>
   <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
-  <nav id="site-nav"><a href="legacy.html">Legacy</a><a href="leadership.html">Leadership</a><a href="resources.html">Resources</a><a href="gallery.html">Gallery</a></nav>
+  <nav id="site-nav"><a href="index.html">Home</a><a href="legacy.html">Legacy</a><a href="leadership.html">Leadership</a><a href="resources.html">Resources</a><a href="gallery.html">Gallery</a></nav>
   <a class="nav-cta" href="#visit">Visit Club 1600 <span>↗</span></a>
 </header>
 
@@ -61,9 +64,30 @@
   </div>
 </section>
 
-<section class="home-tools">
-  <a class="tool-card gallery-tool" href="gallery.html"><small>PHOTO GALLERY</small><h3>See the room.<br>See the work.</h3><p>Meetings, service, competitions, installations and the moments between them.</p><span>Open gallery →</span></a>
-  <a class="tool-card resources-tool" href="resources.html"><small>MEMBER RESOURCES</small><h3>Know the role.<br>Use it outside 1600.</h3><p>Role guides, practical scripts and the real-world skill behind every meeting assignment.</p><span>Explore resources →</span></a>
+<section class="home-previews section">
+  <div class="preview-block gallery-preview">
+    <div class="preview-heading">
+      <div><span class="section-tag">PHOTO GALLERY</span><h2>See the room.<br><em>See the work.</em></h2></div>
+      <a class="text-link" href="gallery.html">Open full gallery <span>→</span></a>
+    </div>
+    <div class="gallery-preview-grid">
+      <a class="gallery-preview-main" href="gallery.html"><img src="assets/exec-photo.webp" alt="Club 1600 executive team"><span><small>LEADERSHIP · 2026</small><strong>The Executive Team</strong></span></a>
+      <a class="gallery-preview-tile maroon" href="gallery.html"><small>MEETINGS</small><strong>Thursday Night at 1600</strong><span>View the room →</span></a>
+      <a class="gallery-preview-tile blue" href="gallery.html"><small>SERVICE</small><strong>Beyond the lectern.</strong><span>View community work →</span></a>
+    </div>
+  </div>
+
+  <div class="preview-block resources-preview">
+    <div class="preview-heading">
+      <div><span class="section-tag">MEMBER RESOURCES</span><h2>Know the role.<br><em>Own the skill.</em></h2></div>
+      <a class="text-link" href="resources.html">Explore all resources <span>→</span></a>
+    </div>
+    <div class="resource-preview-grid">
+      <a href="resources.html#role-lab" class="resource-preview-card"><small>TABLE TOPICS</small><h3>Think under pressure.</h3><p>Role guide + sample script + real-world application.</p><b>01</b></a>
+      <a href="resources.html#role-lab" class="resource-preview-card"><small>EVALUATION</small><h3>Turn observation into value.</h3><p>Give feedback that is specific enough to change behavior.</p><b>02</b></a>
+      <a href="resources.html#toolkit" class="resource-preview-card yellow-preview"><small>SPEECH TOOLKIT</small><h3>Build the speech.</h3><p>Hooks, structure, storytelling, delivery and stronger closes.</p><b>03</b></a>
+    </div>
+  </div>
 </section>
 
 <section class="visit" id="visit">
@@ -72,9 +96,22 @@
 </section>
 </main>
 
-<footer>
-  <div class="footer-top"><a class="wordmark footer-brand" href="index.html"><span class="tm-dot"></span><span><strong>CLUB 1600</strong><small>FIRST BAHAMAS BRANCH</small></span></a><p>Integrity · Respect · Service · Excellence</p><div class="footer-links"><a href="legacy.html">Legacy</a><a href="leadership.html">Leadership</a><a href="resources.html">Resources</a><a href="gallery.html">Gallery</a></div></div>
-  <div class="footer-bottom"><span>© 2026 First Bahamas Branch of Toastmasters · Club 1600</span><span>The information on this website is for the sole use of Toastmasters’ members, for Toastmasters business only. It is not to be used for solicitation and distribution of non-Toastmasters material or information.</span></div>
+<footer class="site-footer">
+  <div class="footer-hero">
+    <img src="assets/exec-photo.webp" alt="Club 1600 executive team">
+    <div class="footer-hero-shade"></div>
+    <div class="footer-hero-copy">
+      <img class="footer-ti-logo" src="assets/toastmasters-logo.webp" alt="Toastmasters International">
+      <div><small>FIRST BAHAMAS BRANCH · CLUB 1600</small><h2>Take your seat.</h2><p>Thursdays · 8:00 PM · Red Cross Society, John F. Kennedy Drive, Nassau</p></div>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="footer-brand"><img src="assets/toastmasters-logo.webp" alt="Toastmasters International"><div><strong>CLUB 1600</strong><span>First Bahamas Branch</span></div></div>
+    <div class="footer-nav-group"><small>EXPLORE</small><a href="index.html">Home</a><a href="legacy.html">Our Legacy</a><a href="leadership.html">Leadership</a><a href="gallery.html">Photo Gallery</a></div>
+    <div class="footer-nav-group"><small>MEMBERS + GUESTS</small><a href="resources.html">Member Resources</a><a href="resources.html#role-lab">Meeting Roles</a><a href="resources.html#toolkit">Public Speaking Toolkit</a><a href="index.html#visit">Visit Club 1600</a></div>
+    <div class="footer-nav-group"><small>TOASTMASTERS</small><a href="https://www.toastmasters.org/" target="_blank" rel="noopener">Toastmasters International ↗</a><a href="https://www.toastmasters.org/Find-a-Club/1600-first-bahamas-branch-of-toastmasters" target="_blank" rel="noopener">Official Club Listing ↗</a><span>Integrity · Respect · Service · Excellence</span></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 First Bahamas Branch of Toastmasters · Club 1600</span><span>The information on this website is for the sole use of Toastmasters’ members for Toastmasters business only. It is not to be used for solicitation and distribution of non-Toastmasters material or information.</span></div>
 </footer>
 <script src="script.js"></script>
 </body></html>
