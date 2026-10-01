@@ -472,3 +472,158 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
   .footer-ti-logo{width:86px;height:82px}
   .footer-main{grid-template-columns:1fr;gap:34px}
 }
+
+
+/* EXPANDED SITE — 2026 */
+.footer-main.expanded{grid-template-columns:1.1fr repeat(4,.9fr);gap:40px}
+
+.home-more{background:var(--fair)}
+.home-more .preview-heading>p{max-width:360px;margin:0 0 8px}
+.home-more-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d8dfe0;border:1px solid #d8dfe0}
+.home-more-grid a{min-height:245px;background:#fff;padding:28px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;transition:.25s}
+.home-more-grid a:hover{background:#07131a;color:#fff;transform:translateY(-4px)}
+.home-more-grid small{font-family:Montserrat,sans-serif;font-size:.56rem;font-weight:800;letter-spacing:.14em;color:var(--maroon)}
+.home-more-grid a:hover small{color:var(--yellow)}
+.home-more-grid h3{font-size:1.8rem;line-height:1.02;margin:34px 0 18px}
+.home-more-grid span{font-family:Montserrat,sans-serif;font-size:.7rem;font-weight:800;color:#667176}
+.home-more-grid a:hover span{color:rgba(255,255,255,.7)}
+
+/* VISIT */
+.visit-page-hero{background:linear-gradient(135deg,#002d46,#004165 58%,#772432)}
+.visit-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#d8dfe0}
+.visit-facts article{background:#fff;padding:30px;min-height:220px}
+.visit-facts small,.journey-grid b,.event-cards small,.recognition-grid span,.ninety-day-roadmap span,.story-prompt small,.lab-practice small{font-family:Montserrat,sans-serif;font-size:.58rem;font-weight:800;letter-spacing:.14em;color:var(--maroon)}
+.visit-facts strong{display:block;font-family:Montserrat,sans-serif;font-size:1.35rem;margin:45px 0 10px}
+.visit-facts p{font-size:.98rem;margin:0}
+.guest-journey{background:var(--fair)}
+.journey-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:45px}
+.journey-grid article{padding:28px;border-top:1px solid #cdd5d6;border-right:1px solid #cdd5d6}
+.journey-grid b{color:var(--blue)}
+.journey-grid h3{font-size:1.55rem;margin:36px 0 10px}
+.journey-grid p{font-size:.98rem}
+.visit-faq details{border-top:1px solid #d4dbdc;padding:22px 0}
+.visit-faq details:last-child{border-bottom:1px solid #d4dbdc}
+.visit-faq summary{font-family:Montserrat,sans-serif;font-size:1.25rem;font-weight:800;cursor:pointer}
+.visit-faq details p{max-width:850px;margin:15px 0 0}
+.visit-cta-panel,.meeting-next,.lab-practice{background:linear-gradient(135deg,#00324d,var(--blue));color:#fff;padding:80px max(5vw,28px);display:flex;justify-content:space-between;align-items:end;gap:40px}
+.visit-cta-panel small,.meeting-next small{font-family:Montserrat,sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.15em;color:var(--yellow)}
+.visit-cta-panel h2,.meeting-next h2,.lab-practice h2{margin:10px 0 0}
+
+/* MEETING EXPERIENCE */
+.meeting-page-hero{background:linear-gradient(135deg,#07131a,#004165 65%,#006094)}
+.meeting-story{padding-top:50px;padding-bottom:50px}
+.meeting-stage{display:grid;grid-template-columns:110px 1fr;gap:45px;padding:55px 0;border-bottom:1px solid #d7ddde}
+.meeting-stage>span{font-family:Montserrat,sans-serif;font-size:3rem;font-weight:900;color:rgba(0,65,101,.14)}
+.meeting-stage small{font-family:Montserrat,sans-serif;font-size:.58rem;font-weight:800;letter-spacing:.14em;color:var(--maroon)}
+.meeting-stage h2{font-size:clamp(2.6rem,5vw,5rem);margin:12px 0 16px}
+.meeting-stage p{max-width:850px}
+.meeting-stage strong{color:var(--blue)}
+
+/* MEMBER STORIES */
+.members-page-hero{background:linear-gradient(135deg,#3b0104,#772432 55%,#004165)}
+.member-story-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;background:var(--fair)}
+.member-story-card{background:#fff;padding:0 24px 28px}
+.member-story-photo{height:290px;margin:0 -24px 24px;background:linear-gradient(180deg,#dfe5e6,#b8c3c6);position:relative;overflow:hidden}
+.member-story-photo:before{content:"";position:absolute;width:110px;height:110px;border-radius:50%;top:40px;left:50%;transform:translateX(-50%);background:#aeb9bd}
+.member-story-photo:after{content:"";position:absolute;width:210px;height:170px;border-radius:110px 110px 0 0;bottom:-20px;left:50%;transform:translateX(-50%);background:#99a7ab}
+.member-story-photo span{position:absolute;z-index:2;right:18px;bottom:14px;font-family:Montserrat,sans-serif;font-size:4rem;font-weight:900;color:rgba(255,255,255,.28)}
+.member-story-card small{font-family:Montserrat,sans-serif;font-size:.56rem;font-weight:800;letter-spacing:.14em;color:var(--maroon)}
+.member-story-card h3{font-size:1.45rem;margin:12px 0 18px}
+.member-story-card p{font-size:.92rem;margin-bottom:10px}
+.story-prompt{padding:90px max(5vw,28px);background:var(--yellow)}
+.story-prompt>div{max-width:950px}
+.story-prompt h2{color:#111}
+.story-prompt p{max-width:850px;color:#333}
+
+/* EVENTS */
+.events-page-hero{background:linear-gradient(135deg,#002f49,#006094 55%,#772432)}
+.event-cards{margin-top:48px;border-top:1px solid #d5dcdd}
+.event-cards article{display:grid;grid-template-columns:120px 1fr;gap:35px;padding:28px 0;border-bottom:1px solid #d5dcdd}
+.event-cards time{display:flex;flex-direction:column}
+.event-cards time b{font-family:Montserrat,sans-serif;font-size:.7rem;color:var(--maroon)}
+.event-cards time span{font-family:Montserrat,sans-serif;font-size:2.7rem;font-weight:900;color:var(--blue);line-height:1}
+.event-cards h3{font-size:1.6rem;margin:6px 0}
+.event-cards p{margin:0}
+.event-disclaimer{margin-top:24px;font-size:.9rem;color:#778186}
+.event-weekly{background:#07131a;color:#fff;padding:100px max(5vw,28px)}
+.event-weekly>div{max-width:900px}
+.event-weekly small{font-family:Montserrat,sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.14em;color:var(--yellow)}
+.event-weekly h2{margin:14px 0 30px}
+
+/* RECOGNITION */
+.recognition-page-hero{background:linear-gradient(135deg,#3b0104,#772432 64%,#002f49)}
+.recognition-feature{background:#07131a;color:#fff}
+.recognition-big small{font-family:Montserrat,sans-serif;font-size:.72rem;letter-spacing:.15em;color:var(--yellow);font-weight:800}
+.recognition-big h2{font-size:clamp(5rem,11vw,10rem);margin:16px 0 25px}
+.recognition-big p{color:rgba(255,255,255,.68);max-width:680px}
+.recognition-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d7ddde}
+.recognition-grid article{background:#fff;padding:32px;min-height:280px}
+.recognition-grid h3{font-size:1.55rem;margin:50px 0 10px}
+.recognition-grid p{font-size:.98rem}
+
+/* NEW MEMBER */
+.new-member-page-hero{background:linear-gradient(135deg,#004165,#006094 58%,#3b0104)}
+.ninety-day-roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d7ddde}
+.ninety-day-roadmap article{background:#fff;padding:32px;min-height:300px}
+.ninety-day-roadmap h3{font-size:1.7rem;margin:52px 0 12px}
+.ninety-day-roadmap p{font-size:1rem}
+.ninety-day-roadmap a{font-family:Montserrat,sans-serif;font-size:.7rem;font-weight:800;color:var(--blue)}
+.new-member-links{display:grid;grid-template-columns:repeat(3,1fr);background:#07131a}
+.new-member-links a{padding:45px;border-right:1px solid rgba(255,255,255,.12);color:#fff}
+.new-member-links small{display:block;font-family:Montserrat,sans-serif;font-size:.55rem;font-weight:800;letter-spacing:.14em;color:var(--yellow)}
+.new-member-links strong{display:block;font-family:Montserrat,sans-serif;font-size:1.25rem;margin-top:12px}
+
+/* THE 62 */
+.presidents-page-hero{background:linear-gradient(135deg,#07131a,#004165 62%,#772432)}
+.president-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#d7ddde}
+.president-tile{background:#fff;min-height:270px;padding:24px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.president-tile .num{position:absolute;top:8px;right:15px;font-family:Montserrat,sans-serif;font-size:4.5rem;font-weight:900;color:rgba(0,65,101,.06)}
+.president-tile small{font-family:Montserrat,sans-serif;font-size:.55rem;font-weight:800;letter-spacing:.13em;color:var(--maroon)}
+.president-tile h3{font-size:1.25rem;margin:10px 0 4px}
+.president-tile p{font-size:.86rem;margin:0;color:#7a8387}
+.president-tile.known{background:var(--yellow)}
+.president-tile.known .num{color:rgba(119,36,50,.08)}
+
+/* SPEECH LAB */
+.speechlab-page-hero{background:linear-gradient(135deg,#00283e,#004165 55%,#772432)}
+.speech-lab{display:grid;grid-template-columns:330px 1fr;gap:60px}
+.speech-lab-buttons{display:flex;flex-direction:column;gap:8px}
+.speech-lab-buttons button{border:1px solid #d2d9db;background:#fff;padding:15px 17px;text-align:left;font-family:Montserrat,sans-serif;font-size:.72rem;font-weight:800;cursor:pointer;transition:.2s}
+.speech-lab-buttons button:hover,.speech-lab-buttons button.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.speech-lab-output{min-height:560px;background:#07131a;color:#fff;padding:44px;position:relative;overflow:hidden}
+.speech-lab-output:after{content:"1600";position:absolute;right:-45px;bottom:-50px;font-family:Montserrat,sans-serif;font-size:11rem;font-weight:900;color:rgba(255,255,255,.025);letter-spacing:-.08em}
+.speech-lab-output>*{position:relative;z-index:2}
+.speech-lab-output small{font-family:Montserrat,sans-serif;font-size:.58rem;font-weight:800;letter-spacing:.14em;color:var(--yellow)}
+.speech-lab-output h2{font-size:clamp(3rem,5vw,5.3rem);margin:10px 0 28px}
+.lab-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.12)}
+.lab-detail-grid div{background:#0d1e27;padding:24px}
+.lab-detail-grid h4{font-family:Montserrat,sans-serif;font-size:.62rem;letter-spacing:.12em;color:var(--yellow);margin:0 0 8px}
+.lab-detail-grid p{color:rgba(255,255,255,.72);font-size:1rem;margin:0}
+.lab-practice p{color:rgba(255,255,255,.68);margin-bottom:0}
+
+/* RESPONSIVE EXPANDED */
+@media(max-width:1100px){
+  .footer-main.expanded{grid-template-columns:1fr 1fr 1fr}
+  .member-story-grid{grid-template-columns:repeat(2,1fr)}
+  .recognition-grid,.ninety-day-roadmap{grid-template-columns:repeat(2,1fr)}
+  .president-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:820px){
+  .home-more-grid{grid-template-columns:1fr 1fr}
+  .visit-facts,.journey-grid{grid-template-columns:1fr 1fr}
+  .meeting-stage{grid-template-columns:65px 1fr;gap:20px}
+  .speech-lab{grid-template-columns:1fr;gap:24px}
+  .speech-lab-buttons{display:grid;grid-template-columns:1fr 1fr}
+  .footer-main.expanded{grid-template-columns:1fr 1fr}
+  .new-member-links{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .home-more-grid,.visit-facts,.journey-grid,.member-story-grid,.recognition-grid,.ninety-day-roadmap,.president-grid{grid-template-columns:1fr}
+  .speech-lab-buttons{grid-template-columns:1fr}
+  .speech-lab-output{padding:28px 22px}
+  .lab-detail-grid{grid-template-columns:1fr}
+  .meeting-stage{grid-template-columns:1fr}
+  .event-cards article{grid-template-columns:80px 1fr}
+  .footer-main.expanded{grid-template-columns:1fr}
+  .visit-cta-panel,.meeting-next,.lab-practice{flex-direction:column;align-items:flex-start}
+}
