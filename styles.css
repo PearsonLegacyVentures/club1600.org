@@ -652,10 +652,10 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 }
 .hero-photo img{
   position:absolute;
-  right:-1.5vw;
-  bottom:0;
-  width:min(78vw,1380px);
-  max-height:95%;
+  right:-13vw;
+  bottom:-2vh;
+  width:min(84vw,1480px);
+  max-height:94%;
   object-fit:contain;
   object-position:right bottom;
   filter:drop-shadow(0 28px 34px rgba(0,0,0,.26));
@@ -679,9 +679,10 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 }
 @media(max-width:820px){
   .hero-photo img{
-    width:118vw;
+    width:122vw;
     max-width:none;
-    right:-38vw;
+    right:-52vw;
+    bottom:-1vh;
     max-height:82%;
     opacity:.82;
   }
@@ -742,4 +743,20 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
   .gallery-item.tall{grid-row:auto}
   .meeting-photo-band{min-height:520px}
   .meeting-photo-band>img{object-position:58% center}
+}
+
+
+/* HOMEPAGE LEGACY STAT */
+.hero-stats .since-stat b{
+  font-size:.66rem;
+  letter-spacing:.14em;
+  margin-bottom:6px;
+}
+.hero-stats .since-stat span{
+  font-family:Montserrat,sans-serif;
+  font-size:2rem;
+  font-weight:900;
+  line-height:1;
+  letter-spacing:-.04em;
+  color:var(--blue);
 }
