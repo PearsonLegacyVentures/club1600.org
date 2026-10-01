@@ -109,8 +109,8 @@ if(presidentGrid){
     {n:58,name:'Ray-Don K. Poitier',term:'2022–2023'},
     {n:59,name:'Stefan C. Bonimy',term:'2023–2024'},
     {n:60,name:'Camron K. Reckley',term:'2024–2025'},
-    {n:61,name:'Jamaal Cooper',term:'2025–2026'},
-    {n:62,name:'Azano P. Major',term:'2026–2027',photo:'assets/azano-cutout.webp'}
+    {n:61,name:'Jamaal Cooper',term:'2025–2026',photo:'assets/jamaal-cooper-cutout.webp'},
+    {n:62,name:'Azano P. Major',term:'2026–2027',photo:'assets/azano-major-cutout.webp'}
   ];
   const initials=name=>name.replace(/\b(Jr\.|III|II)\b/g,'').split(/\s+/).filter(Boolean).map(part=>part.replace(/[^A-Za-z]/g,'')[0]).filter(Boolean).slice(0,2).join('');
   presidents.forEach(item=>{

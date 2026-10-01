@@ -776,3 +776,26 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 
 /* FOOTER TAKE-YOUR-SEAT CLEANUP */
 .footer-ti-logo{display:none!important}
+
+
+/* EXECUTIVE PORTRAIT CUTOUTS — 2026 */
+.exec-mini-photo.real,
+.exec-card-photo.real,
+.president-photo{
+  background:linear-gradient(180deg,#f5f7f7 0%,#e7ecee 100%);
+}
+.exec-mini-photo.real img,
+.exec-card-photo.real img,
+.president-photo img{
+  object-position:center bottom;
+}
+.exec-mini.immediate-past .exec-mini-photo{
+  background:linear-gradient(180deg,#f7e992 0%,#f2df74 100%);
+}
+.exec-card.immediate-past{
+  border-top:4px solid var(--yellow);
+}
+.exec-card.immediate-past>span{
+  font-size:2.6rem;
+  top:20px;
+}
