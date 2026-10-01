@@ -760,3 +760,7 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
   letter-spacing:-.04em;
   color:var(--blue);
 }
+
+
+/* FOOTER TAKE-YOUR-SEAT CLEANUP */
+.footer-ti-logo{display:none!important}
