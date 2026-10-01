@@ -688,3 +688,58 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
   .exec-photo-band{min-height:520px}
   .exec-photo-band img{inset:8% -18% 0;width:136%;height:92%}
 }
+
+
+/* CLUB 1600 PHOTOGRAPHY PASS */
+.gallery-item.tall{grid-row:span 2}
+.meeting-page-hero{
+  background:
+    linear-gradient(90deg,rgba(7,19,26,.96) 0%,rgba(0,65,101,.82) 47%,rgba(0,65,101,.35) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.34)),
+    url("assets/meeting-room.webp") center 48%/cover no-repeat;
+}
+.meeting-photo-band{
+  min-height:620px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:flex-end;
+  color:#fff;
+  background:#07131a;
+}
+.meeting-photo-band>img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 42%;
+}
+.meeting-photo-band:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(0,25,39,.94) 0%,rgba(0,46,70,.65) 45%,rgba(0,0,0,.18) 75%),
+    linear-gradient(180deg,transparent 35%,rgba(7,19,26,.9) 100%);
+}
+.meeting-photo-band>div{
+  position:relative;
+  z-index:2;
+  max-width:850px;
+  padding:70px max(5vw,28px);
+}
+.meeting-photo-band small{
+  font-family:Montserrat,sans-serif;
+  font-size:.6rem;
+  font-weight:800;
+  letter-spacing:.15em;
+  color:var(--yellow);
+}
+.meeting-photo-band h2{margin:10px 0 12px}
+.meeting-photo-band p{max-width:680px;color:rgba(255,255,255,.76);margin:0}
+@media(max-width:820px){
+  .gallery-item.tall{grid-row:auto}
+  .meeting-photo-band{min-height:520px}
+  .meeting-photo-band>img{object-position:58% center}
+}
