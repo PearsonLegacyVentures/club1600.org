@@ -150,3 +150,17 @@ if(labOutput){
     renderLab(btn.dataset.lab);
   }));
 }
+
+
+// Bahamas AI Solutions site credit
+document.querySelectorAll('.footer-bottom').forEach(footer=>{
+  if(footer.querySelector('.site-credit')) return;
+  const credit=document.createElement('a');
+  credit.className='site-credit';
+  credit.href='https://bahamasaisolutions.com/';
+  credit.target='_blank';
+  credit.rel='noopener';
+  credit.setAttribute('aria-label','Website designed by Bahamas AI Solutions');
+  credit.innerHTML='Website designed by <strong>Bahamas AI Solutions</strong> ↗';
+  footer.appendChild(credit);
+});
