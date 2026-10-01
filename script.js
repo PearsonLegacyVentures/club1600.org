@@ -33,3 +33,13 @@ window.addEventListener('scroll',()=>{
 },{passive:true});
 
 document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));
+
+// Gallery filtering
+const galleryButtons=[...document.querySelectorAll('[data-filter]')];
+const galleryItems=[...document.querySelectorAll('[data-cat]')];
+galleryButtons.forEach(btn=>btn.addEventListener('click',()=>{
+  galleryButtons.forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const filter=btn.dataset.filter;
+  galleryItems.forEach(item=>item.classList.toggle('hidden',filter!=='all'&&item.dataset.cat!==filter));
+}));
