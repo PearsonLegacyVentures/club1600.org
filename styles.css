@@ -349,3 +349,18 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
   .gallery-placeholder.tall{grid-row:auto}
   .long-timeline{grid-template-columns:1fr}
 }
+
+
+.toolkit-section{background:#fff}
+.toolkit-head{margin-top:22px;margin-bottom:52px}
+.toolkit-head h2 em{color:var(--blue)}
+.toolkit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d8dfe0;border:1px solid #d8dfe0}
+.toolkit-card{background:#fff;padding:30px;min-height:300px;position:relative;overflow:hidden}
+.toolkit-card:after{content:"";position:absolute;right:-35px;bottom:-35px;width:110px;height:110px;border:18px solid rgba(0,65,101,.04);border-radius:50%}
+.toolkit-card small{font-family:Montserrat,sans-serif;font-size:.58rem;font-weight:800;letter-spacing:.14em;color:var(--maroon)}
+.toolkit-card h3{font-size:1.55rem;line-height:1.05;margin:48px 0 14px}
+.toolkit-card p{font-size:.98rem;margin-bottom:10px}
+.toolkit-card p strong{color:var(--blue)}
+
+@media(max-width:980px){.toolkit-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.toolkit-grid{grid-template-columns:1fr}.toolkit-card{min-height:auto}}
