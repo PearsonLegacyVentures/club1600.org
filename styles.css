@@ -55,7 +55,7 @@ p{font-size:1.12rem;line-height:1.65;color:#40464b}
 .legacy-rail i{display:block;width:1px;height:26px;background:currentColor}
 
 .hero{min-height:100svh;background:var(--blue);position:relative;color:#fff;display:flex;align-items:flex-end;overflow:hidden}
-.hero-photo{position:absolute;inset:0;background:url("assets/exec-photo.webp") center 34%/cover no-repeat;transform:scale(1.02)}
+.hero-photo{position:absolute;inset:0;background:linear-gradient(135deg,#002d46 0%,#004165 55%,#07131a 100%);transform:scale(1.02)}
 .hero-overlay{position:absolute;inset:0;background:
 linear-gradient(90deg,rgba(0,34,54,.97) 0%,rgba(0,48,75,.82) 34%,rgba(0,65,101,.38) 60%,rgba(59,1,4,.22) 82%,rgba(0,0,0,.28) 100%),
 linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.22))}
