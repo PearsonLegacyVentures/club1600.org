@@ -896,3 +896,49 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 
 .neil-feature-caption a{font-family:Montserrat,sans-serif;font-size:.62rem;font-weight:800;color:var(--yellow);white-space:nowrap}
 .neil-feature-caption a:hover{text-decoration:underline}
+
+
+/* DYNAMIC YOUTH IN ACTION */
+.dya-home{display:grid;grid-template-columns:.82fr 1.18fr;min-height:720px;background:#07131a;color:#fff}
+.dya-home-copy{padding:90px max(5vw,42px);display:flex;flex-direction:column;justify-content:center;background:linear-gradient(150deg,#002d46 0%,#004165 65%,#00324d 100%)}
+.dya-home-copy .eyebrow{color:var(--yellow);margin-top:28px}
+.dya-home-copy h2{font-size:clamp(3.5rem,5.4vw,6rem)}
+.dya-home-copy p{color:rgba(255,255,255,.72);max-width:620px}
+.dya-home-copy .btn{align-self:flex-start;margin-top:20px}
+.dya-home-collage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:3px;background:#07131a;min-height:720px}
+.dya-home-collage img{width:100%;height:100%;object-fit:cover;min-height:0;filter:saturate(.96) contrast(1.02)}
+.dya-home-collage img:first-child{grid-row:1/-1}
+
+.dya-feature{background:#fff}
+.dya-feature-head{display:grid;grid-template-columns:1.05fr .95fr;gap:8vw;align-items:end;margin-top:24px}
+.dya-feature-head h2 em{color:var(--maroon)}
+.dya-feature-head>p{padding-bottom:22px;font-size:1.16rem}
+.dya-photo-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:290px;gap:12px;margin-top:55px}
+.dya-photo{grid-column:span 4;position:relative;margin:0;overflow:hidden;background:#dde4e5}
+.dya-photo.wide{grid-column:span 8}
+.dya-photo img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.dya-photo:hover img{transform:scale(1.035)}
+.dya-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.68));pointer-events:none}
+.dya-photo figcaption{position:absolute;left:24px;right:24px;bottom:20px;z-index:2;color:#fff}
+.dya-photo figcaption small{display:block;font-family:Montserrat,sans-serif;font-size:.56rem;font-weight:800;letter-spacing:.14em;color:var(--yellow)}
+.dya-photo figcaption strong{display:block;font-family:Montserrat,sans-serif;font-size:1.35rem;margin-top:4px}
+.dya-skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d8dfe0;margin-top:12px}
+.dya-skill-grid article{background:var(--fair);padding:30px;position:relative;min-height:285px}
+.dya-skill-grid article>span{position:absolute;right:18px;top:10px;font-family:Montserrat,sans-serif;font-size:4.5rem;font-weight:900;color:rgba(0,65,101,.06)}
+.dya-skill-grid small{font-family:Montserrat,sans-serif;font-size:.56rem;font-weight:800;letter-spacing:.14em;color:var(--maroon)}
+.dya-skill-grid h3{font-size:1.65rem;line-height:1.05;margin:58px 0 12px}
+.dya-skill-grid p{font-size:.98rem;margin-bottom:0}
+
+@media(max-width:900px){
+  .dya-home,.dya-feature-head{grid-template-columns:1fr}
+  .dya-home-collage{min-height:560px}
+  .dya-photo-grid{grid-template-columns:1fr 1fr;grid-auto-rows:260px}
+  .dya-photo,.dya-photo.wide{grid-column:auto}
+  .dya-skill-grid{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .dya-home-copy{padding:70px 24px}
+  .dya-home-collage{grid-template-columns:1fr 1fr;grid-template-rows:280px 220px;min-height:auto}
+  .dya-home-collage img:first-child{grid-row:auto;grid-column:1/-1}
+  .dya-photo-grid{grid-template-columns:1fr;grid-auto-rows:260px}
+}
