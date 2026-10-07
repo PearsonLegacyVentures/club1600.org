@@ -842,3 +842,54 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 @media(max-width:820px){
   .president-feature-grid{grid-template-columns:1fr;gap:36px}
 }
+
+
+/* NEIL PERCENTIE / COMMUNITY IMPACT */
+.neil-home{display:grid;grid-template-columns:1.15fr .85fr;min-height:720px;background:#07131a;color:#fff;overflow:hidden}
+.neil-home-media{position:relative;min-height:720px;background:#000}
+.neil-home-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.neil-video-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.42))}
+.neil-video-badge{position:absolute;left:28px;bottom:25px;z-index:2;display:flex;align-items:center;gap:14px}
+.neil-video-badge span{font-family:Montserrat,sans-serif;font-size:.6rem;letter-spacing:.14em;font-weight:800;background:var(--yellow);color:#111;padding:8px 10px}
+.neil-video-badge strong{font-family:Montserrat,sans-serif;font-size:.85rem;letter-spacing:.08em}
+.neil-home-copy{padding:95px 6vw 80px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(150deg,var(--maroon-deep),var(--maroon) 68%,#4d0711)}
+.neil-home-copy .eyebrow{color:var(--yellow);margin-top:28px}
+.neil-home-copy h2{font-size:clamp(3.4rem,5.5vw,6rem)}
+.neil-home-copy p{color:rgba(255,255,255,.72);max-width:620px}
+.neil-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:20px}
+.video-sound-btn{border:1px solid rgba(255,255,255,.28);background:transparent;color:#fff;padding:15px 18px;font-family:Montserrat,sans-serif;font-size:.7rem;font-weight:800;cursor:pointer}
+
+.impact-page-hero{background:linear-gradient(135deg,#3b0104,#772432 55%,#004165)}
+.neil-feature{display:grid;grid-template-columns:.85fr 1.15fr;gap:6vw;align-items:center}
+.neil-feature-copy h2 em{color:var(--maroon)}
+.impact-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d7ddde;margin-top:38px}
+.impact-stats article{background:var(--fair);padding:20px}
+.impact-stats b{display:block;font-family:Montserrat,sans-serif;font-size:1.85rem;color:var(--blue)}
+.impact-stats span{display:block;font-family:Montserrat,sans-serif;font-size:.52rem;font-weight:800;letter-spacing:.12em;color:#737e82;margin-top:4px}
+.neil-feature-video{background:#07131a;box-shadow:var(--shadow)}
+.neil-feature-video video{width:100%;display:block;aspect-ratio:16/9;background:#000;object-fit:cover}
+.neil-feature-caption{padding:20px 22px;color:#fff;display:flex;justify-content:space-between;gap:20px;align-items:center}
+.neil-feature-caption small{font-family:Montserrat,sans-serif;font-size:.56rem;font-weight:800;letter-spacing:.14em;color:var(--yellow)}
+.neil-feature-caption strong{font-family:Montserrat,sans-serif;font-size:.8rem}
+.impact-pillars{background:var(--fair)}
+.impact-pillar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#d5dcdd;margin-top:45px}
+.impact-pillar-grid article{background:#fff;padding:30px;min-height:300px}
+.impact-pillar-grid small{font-family:Montserrat,sans-serif;font-size:.56rem;font-weight:800;letter-spacing:.14em;color:var(--maroon)}
+.impact-pillar-grid h3{font-size:1.65rem;line-height:1.05;margin:55px 0 12px}
+.impact-pillar-grid p{font-size:.98rem}
+.impact-archive{padding:90px max(5vw,28px);background:linear-gradient(135deg,#002d46,var(--blue));color:#fff;display:flex;justify-content:space-between;align-items:end;gap:40px}
+.impact-archive small{font-family:Montserrat,sans-serif;font-size:.58rem;font-weight:800;letter-spacing:.15em;color:var(--yellow)}
+.impact-archive h2{margin:12px 0}
+.impact-archive p{color:rgba(255,255,255,.68);max-width:700px;margin-bottom:0}
+
+@media(max-width:900px){
+  .neil-home,.neil-feature{grid-template-columns:1fr}
+  .neil-home-media{min-height:500px}
+  .impact-pillar-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .neil-home-media{min-height:390px}
+  .neil-home-copy{padding:70px 24px}
+  .impact-stats,.impact-pillar-grid{grid-template-columns:1fr}
+  .impact-archive{flex-direction:column;align-items:flex-start}
+}
