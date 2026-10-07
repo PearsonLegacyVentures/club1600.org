@@ -893,3 +893,6 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
   .impact-stats,.impact-pillar-grid{grid-template-columns:1fr}
   .impact-archive{flex-direction:column;align-items:flex-start}
 }
+
+.neil-feature-caption a{font-family:Montserrat,sans-serif;font-size:.62rem;font-weight:800;color:var(--yellow);white-space:nowrap}
+.neil-feature-caption a:hover{text-decoration:underline}
