@@ -942,3 +942,15 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
   .dya-home-collage img:first-child{grid-row:auto;grid-column:1/-1}
   .dya-photo-grid{grid-template-columns:1fr;grid-auto-rows:260px}
 }
+
+
+/* DYA HOMEPAGE — SINGLE PHOTO */
+.dya-home-photo{position:relative;min-height:720px;display:block;overflow:hidden;background:#111}
+.dya-home-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .45s ease}
+.dya-home-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(0,0,0,.72));pointer-events:none}
+.dya-home-photo:hover img{transform:scale(1.025)}
+.dya-home-photo>span{position:absolute;left:28px;right:28px;bottom:26px;z-index:2;color:#fff}
+.dya-home-photo small{display:block;font-family:Montserrat,sans-serif;font-size:.58rem;font-weight:800;letter-spacing:.14em;color:var(--yellow)}
+.dya-home-photo strong{display:block;font-family:Montserrat,sans-serif;font-size:1.3rem;margin-top:6px}
+@media(max-width:900px){.dya-home-photo{min-height:520px}}
+@media(max-width:620px){.dya-home-photo{min-height:400px}}
