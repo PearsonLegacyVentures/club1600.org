@@ -164,3 +164,15 @@ document.querySelectorAll('.footer-bottom').forEach(footer=>{
   credit.innerHTML='Website designed by <strong>Bahamas AI Solutions</strong> ↗';
   footer.appendChild(credit);
 });
+
+
+// Neil Percentie homepage video sound toggle
+document.querySelectorAll('[data-neil-sound]').forEach(btn=>{
+  const video=btn.closest('.neil-home')?.querySelector('video');
+  if(!video)return;
+  btn.addEventListener('click',()=>{
+    video.muted=!video.muted;
+    if(video.paused) video.play().catch(()=>{});
+    btn.textContent=video.muted?'Sound on':'Mute';
+  });
+});
