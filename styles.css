@@ -997,3 +997,14 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
   .legacy-archive-photo{min-height:360px}
   .legacy-archive-copy{padding:70px 24px}
 }
+
+
+/* THE 62 — FORCE EACH ARCHIVE SPRITE CELL TO RENDER AS ONE PORTRAIT */
+.president-tile.has-photo .president-portrait.archive-president-portrait{
+  background-repeat:no-repeat !important;
+  background-size:400% 500% !important;
+  background-position:var(--sprite-x) var(--sprite-y) !important;
+  background-color:#e8eceb !important;
+  filter:contrast(1.03) saturate(.94);
+}
+.president-portrait.archive-president-portrait:after{content:none !important;display:none !important;}
