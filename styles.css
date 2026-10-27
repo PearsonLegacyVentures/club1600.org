@@ -1052,3 +1052,36 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 @media(max-width:560px){
   .president-portrait.restored-president-portrait{height:390px}
 }
+
+
+/* GALLERY HUB — PEOPLE, PHOTOS, LEGACY */
+.gallery-hub{padding-top:72px;padding-bottom:46px}
+.gallery-hub-head{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:42px;align-items:end;margin-bottom:28px}
+.gallery-hub-head h2{font-family:"Montserrat",sans-serif;font-size:clamp(2.4rem,5vw,5rem);line-height:.92;letter-spacing:-.055em;margin:10px 0 0;color:#101820}
+.gallery-hub-head h2 em{font-family:"Source Sans 3",sans-serif;font-weight:400;color:#772432}
+.gallery-hub-head>p{margin:0;color:#5d6770;font-size:1rem;line-height:1.7;max-width:620px}
+.gallery-hub-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.gallery-hub-card{position:relative;min-height:360px;overflow:hidden;border-radius:2px;background:#0b1f33;color:#fff;isolation:isolate}
+.gallery-hub-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .45s ease,filter .45s ease}
+.gallery-hub-card .gallery-hub-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,31,.08) 15%,rgba(8,20,31,.86) 100%);z-index:1}
+.gallery-hub-card>div{position:absolute;z-index:2;left:26px;right:26px;bottom:24px}
+.gallery-hub-card small{display:block;color:#f0cf75;font-family:"Montserrat",sans-serif;font-size:.68rem;font-weight:800;letter-spacing:.15em;margin-bottom:8px}
+.gallery-hub-card h3{font-family:"Montserrat",sans-serif;font-size:clamp(1.45rem,2.6vw,2.35rem);line-height:1.02;letter-spacing:-.035em;margin:0;max-width:540px}
+.gallery-hub-card p{max-width:520px;margin:10px 0 14px;color:#d7dee3;line-height:1.5;font-size:.92rem}
+.gallery-hub-card b{font-family:"Montserrat",sans-serif;font-size:.72rem;letter-spacing:.04em}
+.gallery-hub-card:hover img{transform:scale(1.035);filter:saturate(1.05)}
+.gallery-hub-card.member-highlight-card{min-height:430px}
+.gallery-hub-card.member-highlight-card img{object-position:center 35%}
+#club-gallery{scroll-margin-top:96px}
+
+@media(max-width:860px){
+  .gallery-hub-head{grid-template-columns:1fr;gap:18px}
+  .gallery-hub-grid{grid-template-columns:1fr}
+  .gallery-hub-card,.gallery-hub-card.member-highlight-card{min-height:330px}
+}
+@media(max-width:560px){
+  .gallery-hub{padding-top:48px}
+  .gallery-hub-card{min-height:300px}
+  .gallery-hub-card>div{left:18px;right:18px;bottom:18px}
+  .gallery-hub-card p{font-size:.84rem}
+}
