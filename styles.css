@@ -1010,3 +1010,17 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
   filter:contrast(1.03) saturate(.94);
 }
 .president-portrait.archive-president-portrait:after{content:none !important;display:none !important;}
+
+
+/* THE 62 — INDIVIDUAL AI-RESTORED ARCHIVE PORTRAITS */
+.president-portrait.restored-president-portrait{
+  background:#e7ebec;
+}
+.president-portrait.restored-president-portrait img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 24%;
+  transform:scale(1.035);
+  filter:none;
+}
