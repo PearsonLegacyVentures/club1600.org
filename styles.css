@@ -1002,7 +1002,7 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 /* THE 62 — FORCE EACH ARCHIVE SPRITE CELL TO RENDER AS ONE PORTRAIT */
 .president-tile.has-photo .president-portrait.archive-president-portrait{
   height:auto !important;
-  aspect-ratio:4 / 5;
+  aspect-ratio:12 / 17;
   background-repeat:no-repeat !important;
   background-size:400% 500% !important;
   background-position:var(--sprite-x) var(--sprite-y) !important;
