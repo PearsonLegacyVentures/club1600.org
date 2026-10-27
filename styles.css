@@ -1085,3 +1085,39 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
   .gallery-hub-card>div{left:18px;right:18px;bottom:18px}
   .gallery-hub-card p{font-size:.84rem}
 }
+
+
+/* Neil Percentie archive video fallback */
+.neil-video-fallback{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  background:#101820;
+}
+.neil-video-fallback img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  filter:saturate(.88) contrast(1.02);
+}
+.neil-video-fallback .video-status{
+  position:absolute;
+  left:18px;
+  bottom:18px;
+  z-index:3;
+  padding:7px 10px;
+  background:rgba(16,24,32,.78);
+  color:#fff;
+  font-family:Montserrat,sans-serif;
+  font-size:.62rem;
+  font-weight:800;
+  letter-spacing:.12em;
+}
+.impact-video-fallback{
+  position:relative;
+  min-height:420px;
+}
+@media(max-width:700px){
+  .impact-video-fallback{min-height:300px}
+}
