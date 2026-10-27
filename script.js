@@ -115,7 +115,7 @@ if(presidentGrid){
   const initials=name=>name.replace(/\b(Jr\.|III|II)\b/g,'').split(/\s+/).filter(Boolean).map(part=>part.replace(/[^A-Za-z]/g,'')[0]).filter(Boolean).slice(0,2).join('');
   const restoredPortrait=item=>{
     const file=`assets/presidents/president-${String(item.n).padStart(2,'0')}.webp`;
-    return `<div class="president-portrait restored-president-portrait"><img src="${file}" alt="${item.name}, ${item.term} President of Club 1600" loading="lazy" decoding="async"></div>`;
+    return `<div class="president-portrait restored-president-portrait" style="--portrait-url:url('${file}')"><img src="${file}" alt="${item.name}, ${item.term} President of Club 1600" loading="lazy" decoding="async"></div>`;
   };
   const archivePortrait=item=>{
     const group={file:'assets/past-presidents-41-60.webp',start:41};
