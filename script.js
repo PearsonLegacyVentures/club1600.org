@@ -113,12 +113,23 @@ if(presidentGrid){
     {n:62,name:'Azano P. Major',term:'2026–2027',photo:'assets/azano-major-cutout.webp'}
   ];
   const initials=name=>name.replace(/\b(Jr\.|III|II)\b/g,'').split(/\s+/).filter(Boolean).map(part=>part.replace(/[^A-Za-z]/g,'')[0]).filter(Boolean).slice(0,2).join('');
+  const archivePortrait=item=>{
+    const group=item.n<=20?{file:'assets/past-presidents-01-20.webp',start:1}:item.n<=40?{file:'assets/past-presidents-21-40.webp',start:21}:{file:'assets/past-presidents-41-60.webp',start:41};
+    const index=item.n-group.start;
+    const col=index%4;
+    const row=Math.floor(index/4);
+    const x=[0,33.333,66.667,100][col];
+    const y=[0,25,50,75,100][row];
+    return `<div class="president-portrait archive-president-portrait" role="img" aria-label="${item.name}, ${item.term} President of Club 1600" style="background-image:url('${group.file}');--sprite-x:${x}%;--sprite-y:${y}%"></div>`;
+  };
   presidents.forEach(item=>{
     const card=document.createElement('article');
-    card.className='president-tile'+(item.photo?' has-photo':'');
+    card.className='president-tile'+(item.photo||item.n<=60?' has-photo':'');
     const portrait=item.photo
       ? `<div class="president-portrait"><img src="${item.photo}" alt="${item.name}, ${item.term} President of Club 1600" loading="lazy"></div>`
-      : `<div class="president-portrait portrait-pending"><span>${initials(item.name)}</span><small>PORTRAIT ARCHIVE</small></div>`;
+      : item.n<=60
+        ? archivePortrait(item)
+        : `<div class="president-portrait portrait-pending"><span>${initials(item.name)}</span><small>PORTRAIT ARCHIVE</small></div>`;
     card.innerHTML=`${portrait}<div class="president-tile-copy"><span class="num">${String(item.n).padStart(2,'0')}</span><small>${item.term}</small><h3>${item.name}</h3>${item.note?`<p>${item.note}</p>`:''}</div>`;
     presidentGrid.appendChild(card);
   });
