@@ -1365,3 +1365,64 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
   .member-voice-testimony blockquote p{font-size:1.12rem}
   .member-voice-invite{padding:75px 24px}
 }
+
+
+/* MEMBER STORIES LIBRARY — REUSABLE MULTI-PROFILE LAYOUT */
+.member-directory{background:#fff}
+.member-directory-head{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:5vw;align-items:end;margin-bottom:42px}
+.member-directory-head h2{font-size:clamp(2.7rem,5.1vw,5.7rem);line-height:1.05;margin:20px 0 0}
+.member-directory-head h2 em{color:var(--maroon)}
+.member-directory-head>p{max-width:500px;margin-bottom:5px;font-size:1.1rem;line-height:1.55}
+.member-directory-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.member-directory-card{display:grid;grid-template-columns:43% 57%;overflow:hidden;min-height:300px;background:#061e2d;color:#fff;transition:transform .25s ease,box-shadow .25s ease}
+.member-directory-card:hover,.member-directory-card:focus-visible{transform:translateY(-5px);box-shadow:0 23px 60px rgba(0,30,46,.18)}
+.member-directory-portrait{min-height:300px;overflow:hidden;background:#0a2132}
+.member-directory-portrait img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.member-directory-card:hover .member-directory-portrait img{transform:scale(1.035)}
+.johnathan-directory-photo{background:linear-gradient(150deg,#245375,#061623)}
+.johnathan-directory-photo img{object-position:center 38%}
+.charles-directory-photo img{object-position:center 25%}
+.member-directory-copy{padding:36px 28px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-width:0}
+.member-directory-copy>small{font:800 .56rem Montserrat,sans-serif;letter-spacing:.16em;color:var(--yellow)}
+.member-directory-copy h3{font:900 clamp(1.6rem,2.35vw,2.85rem)/1.02 Montserrat,sans-serif;letter-spacing:-.065em;color:#fff;margin:16px 0 18px}
+.member-directory-copy>p{color:rgba(255,255,255,.77);font-size:clamp(.91rem,1.1vw,1rem);line-height:1.5;margin:0}
+.member-directory-copy>span{margin-top:29px;font:800 .63rem Montserrat,sans-serif;letter-spacing:.03em;color:var(--yellow)}
+.member-directory-copy>span span{margin-left:5px}
+
+.member-profiles-section{background:#f7f9f9}
+.member-profile{scroll-margin-top:96px}
+.member-profile+.member-profile{border-top:1px solid #dde5e7}
+.member-profile-alt{background:#eef3f5}
+.member-profile .member-voice-heading{margin-bottom:40px}
+.member-profile .member-voice-heading h2{font-size:clamp(3rem,5.1vw,5.7rem);line-height:1.04}
+.member-profile .member-voice-feature{max-width:1550px;margin-inline:auto}
+.member-profile-alt .member-voice-portrait{order:2}
+.member-profile-alt .member-voice-testimony{order:1}
+.member-rose-portrait{background:#15141a}
+.member-rose-portrait img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:center 21%;filter:contrast(1.02)}
+.member-rose-aside{background:#f1f4f5;border-left:3px solid var(--maroon);padding:19px 22px;margin:23px 0 0}
+.member-rose-aside small{display:block;font:800 .58rem Montserrat,sans-serif;letter-spacing:.12em;color:var(--maroon);margin-bottom:7px}
+.member-rose-aside strong{display:block;font:800 clamp(1.2rem,1.6vw,1.75rem) Montserrat,sans-serif;letter-spacing:-.025em;color:#132b3a}
+@media(max-width:1150px){
+ .member-directory-card{grid-template-columns:40% 60%;min-height:290px}
+ .member-directory-copy{padding:28px 21px}
+}
+@media(max-width:850px){
+ .member-directory-head{grid-template-columns:1fr;gap:14px}
+ .member-directory-grid{grid-template-columns:1fr}
+ .member-directory-card{min-height:270px}
+ .member-directory-portrait{min-height:270px}
+ .member-profile-alt .member-voice-portrait{order:0}
+ .member-profile-alt .member-voice-testimony{order:0}
+ .member-rose-portrait img{position:absolute;max-height:none;max-width:none}
+ .member-profile-alt .member-voice-heading,.member-profile .member-voice-heading{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+ .member-directory-card{grid-template-columns:40% 60%;min-height:235px}
+ .member-directory-portrait{min-height:235px}
+ .member-directory-copy{padding:22px 16px}
+ .member-directory-copy h3{font-size:1.55rem;margin:12px 0}
+ .member-directory-copy>p{font-size:.85rem;line-height:1.38}
+ .member-directory-copy>span{margin-top:17px;font-size:.56rem}
+ .member-rose-aside{padding:17px 18px}
+}
