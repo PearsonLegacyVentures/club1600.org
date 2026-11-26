@@ -1312,3 +1312,56 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 .opm-lineage-link{display:inline-flex;align-items:center;margin:16px 0 0 16px;font:800 .7rem Montserrat,sans-serif;letter-spacing:.02em;color:var(--blue)}
 .opm-lineage-link:hover{text-decoration:underline}
 @media(max-width:620px){.opm-lineage-link{margin-left:0;display:block}}
+
+
+/* MEMBER STORIES — REAL JOHNATHAN ALBURY FEATURE */
+.members-real-hero{background:linear-gradient(130deg,#062235 0%,#004165 58%,#642236 100%)}
+.member-voice-section{background:#f8f9f8}
+.member-voice-heading{display:grid;grid-template-columns:1.1fr .9fr;align-items:end;gap:7vw;margin-bottom:48px}
+.member-voice-heading h2{font-size:clamp(3.35rem,5.6vw,6.2rem);margin:22px 0 0}
+.member-voice-heading h2 em{color:var(--maroon)}
+.member-voice-heading>p{max-width:550px;font-size:1.2rem;line-height:1.55;margin-bottom:7px}
+.member-voice-feature{display:grid;grid-template-columns:.91fr 1.09fr;min-height:570px;background:#fff;box-shadow:0 25px 75px rgba(0,35,53,.09)}
+.member-voice-portrait{position:relative;min-height:570px;margin:0;background:radial-gradient(ellipse at 50% 40%,#194361 0%,#071a2a 75%);overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.member-voice-portrait img{display:block;width:100%;max-width:620px;height:auto;max-height:100%;object-fit:contain;object-position:center bottom;filter:contrast(1.02)}
+.member-voice-portrait:after{content:"";position:absolute;bottom:0;left:0;right:0;height:34%;background:linear-gradient(0deg,rgba(3,20,31,.91),transparent);pointer-events:none}
+.member-voice-portrait figcaption{position:absolute;bottom:27px;left:31px;right:20px;z-index:1;color:#fff;display:flex;flex-direction:column;gap:7px}
+.member-voice-portrait figcaption span{font:800 clamp(1.25rem,2vw,2.15rem) Montserrat,sans-serif;letter-spacing:-.04em}
+.member-voice-portrait figcaption small{font:800 .58rem Montserrat,sans-serif;letter-spacing:.13em;color:var(--yellow)}
+.member-voice-testimony{position:relative;padding:60px clamp(26px,4.3vw,82px) 55px;display:flex;flex-direction:column;justify-content:center}
+.member-voice-mark{font:900 7.5rem Georgia,serif;line-height:.55;color:var(--maroon);opacity:.19;height:55px;pointer-events:none}
+.member-voice-label{font:800 .61rem Montserrat,sans-serif;letter-spacing:.16em;color:var(--maroon);margin:24px 0 10px}
+.member-voice-testimony blockquote{margin:0;border:0;padding:0}
+.member-voice-testimony blockquote p{font-size:clamp(1.12rem,1.55vw,1.5rem);line-height:1.58;font-weight:500;letter-spacing:-.012em;color:#13252f;margin:0}
+.member-voice-signature{border-top:1px solid #dce2e4;margin-top:30px;padding-top:21px;display:flex;flex-direction:column;gap:6px}
+.member-voice-signature span{font:800 1rem Montserrat,sans-serif;color:#112a3a}
+.member-voice-signature small{font:700 .55rem Montserrat,sans-serif;letter-spacing:.08em;color:#74858c}
+.member-voice-invite{display:grid;grid-template-columns:1.2fr .8fr;gap:5vw;align-items:end;padding:90px max(5vw,28px);background:linear-gradient(120deg,#071c29,#004165 83%);color:#fff}
+.member-voice-invite h2{margin:23px 0 25px;font-size:clamp(3.1rem,5.5vw,5.8rem)}
+.member-voice-invite p{color:rgba(255,255,255,.75);max-width:660px}
+.member-voice-invite .btn{margin-top:16px}
+.member-voice-meeting{display:flex;flex-direction:column;gap:12px;border-top:2px solid var(--yellow);padding-top:22px;margin-bottom:8px}
+.member-voice-meeting small{font:800 .59rem Montserrat,sans-serif;letter-spacing:.15em;color:var(--yellow)}
+.member-voice-meeting strong{font:900 clamp(1.35rem,2.2vw,2rem) Montserrat,sans-serif;letter-spacing:-.045em}
+.member-voice-meeting span{font-size:1rem;line-height:1.45;color:rgba(255,255,255,.76)}
+@media(max-width:1000px){
+  .member-voice-feature{grid-template-columns:1fr 1fr}
+  .member-voice-testimony{padding:48px 30px}
+}
+@media(max-width:850px){
+  .member-voice-heading,.member-voice-feature,.member-voice-invite{grid-template-columns:1fr}
+  .member-voice-heading{gap:18px}
+  .member-voice-portrait{min-height:460px;max-height:570px}
+  .member-voice-portrait img{max-width:540px}
+  .member-voice-testimony{padding:54px max(5vw,26px) 62px}
+  .member-voice-meeting{margin-top:30px}
+}
+@media(max-width:520px){
+  .member-voice-portrait{min-height:345px}
+  .member-voice-portrait img{max-height:345px}
+  .member-voice-portrait figcaption{left:20px;bottom:20px}
+  .member-voice-testimony{padding:42px 24px 52px}
+  .member-voice-mark{font-size:5rem;height:32px}
+  .member-voice-testimony blockquote p{font-size:1.12rem}
+  .member-voice-invite{padding:75px 24px}
+}
