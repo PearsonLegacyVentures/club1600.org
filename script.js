@@ -193,3 +193,36 @@ document.querySelectorAll('[data-neil-sound]').forEach(btn=>{
     btn.textContent=video.muted?'Sound on':'Mute';
   });
 });
+
+
+/* Event calendar: keep upcoming and completed events accurate in Nassau time. */
+(() => {
+  const calendar=document.querySelector('[data-event-programme]');
+  if(!calendar)return;
+  const upcoming=calendar.querySelector('[data-upcoming-events]');
+  const past=calendar.querySelector('[data-past-events]');
+  if(!upcoming||!past)return;
+  const nowParts=new Intl.DateTimeFormat('en-US',{
+    timeZone:'America/Nassau',year:'numeric',month:'2-digit',day:'2-digit'
+  }).formatToParts(new Date());
+  const number=type=>nowParts.find(part=>part.type===type)?.value||'00';
+  const today=`${number('year')}-${number('month')}-${number('day')}`;
+  const all=[...calendar.querySelectorAll('.event-item[data-event-date]')];
+  all.sort((a,b)=>a.dataset.eventDate.localeCompare(b.dataset.eventDate));
+  all.forEach(event=>{
+    const isUpcoming=event.dataset.eventDate>=today;
+    const state=event.querySelector('[data-event-state]');
+    if(state)state.textContent=isUpcoming?'UPCOMING':'PAST EVENT';
+    (isUpcoming?upcoming:past).appendChild(event);
+  });
+  // Show most recent completed event first.
+  [...past.children].reverse().forEach(item=>past.appendChild(item));
+  if(!upcoming.children.length){
+    const message=document.createElement('p');
+    message.className='event-empty';
+    message.textContent='Further club programme dates will be announced.';
+    upcoming.appendChild(message);
+  }
+  const pastBucket=calendar.querySelector('[data-past-bucket]');
+  if(pastBucket)pastBucket.hidden=!past.children.length;
+})();
