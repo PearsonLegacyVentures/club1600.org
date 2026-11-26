@@ -1452,3 +1452,20 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
  .member-directory-pending .member-directory-monogram{font-size:5rem}
  .member-deangelo-pending .member-pending-monogram{font-size:9rem}
 }
+
+
+/* MEMBER STORY — AMAR PEARSON */
+.amar-directory-photo{background:#101d28}
+.amar-directory-photo img{object-position:37% 41%}
+.member-amar-portrait{background:#0d1b27}
+.member-amar-portrait img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:40% 40%;filter:contrast(1.03) saturate(.97)}
+.member-amar-aside{margin-top:27px;padding:20px 22px 21px;background:#eff4f6;border-left:4px solid var(--maroon)}
+.member-amar-aside small{font:800 .57rem Montserrat,sans-serif;letter-spacing:.13em;color:var(--maroon);display:block;margin-bottom:12px}
+.member-amar-aside strong{font:700 clamp(1.04rem,1.32vw,1.25rem)/1.5 Montserrat,sans-serif;letter-spacing:-.015em;color:#0e2d41;display:block}
+@media(max-width:850px){
+ .member-amar-portrait img{max-width:none;max-height:none;position:absolute;object-position:43% 39%}
+}
+@media(max-width:520px){
+ .member-amar-portrait img{max-height:none;object-position:42% 36%}
+ .member-amar-aside{padding:18px}
+}
