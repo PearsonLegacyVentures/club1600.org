@@ -1476,3 +1476,16 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 .member-deangelo-portrait{background:#132331}
 .member-deangelo-portrait img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:58% 32%;filter:contrast(1.02)}
 @media(max-width:850px){.member-deangelo-portrait img{max-height:none;max-width:none;object-position:58% 32%}}
+
+
+/* MEMBER STORY — DWIGHT GRANT, 2026 */
+.dwight-directory-photo{background:#505458}
+.dwight-directory-photo img{object-position:50% 29%}
+.member-dwight-portrait{background:#3e4146}
+.member-dwight-portrait img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:50% 29%;filter:contrast(1.01)}
+@media(max-width:850px){
+ .member-dwight-portrait img{max-width:none;max-height:none;object-position:50% 25%}
+}
+@media(max-width:520px){
+ .member-dwight-portrait img{max-height:none;object-position:50% 22%}
+}
