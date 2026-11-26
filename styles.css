@@ -1306,3 +1306,9 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
  .opm-coverage-grid{grid-template-columns:1fr;gap:22px}
  .opm-story-close{padding:75px 24px}
 }
+
+.event-story-link{display:inline-block;margin-top:14px;font:800 .73rem Montserrat,sans-serif;letter-spacing:.035em;color:var(--blue);border-bottom:1px solid currentColor;padding-bottom:6px}
+.event-story-link:hover{color:var(--maroon)}
+.opm-lineage-link{display:inline-flex;align-items:center;margin:16px 0 0 16px;font:800 .7rem Montserrat,sans-serif;letter-spacing:.02em;color:var(--blue)}
+.opm-lineage-link:hover{text-decoration:underline}
+@media(max-width:620px){.opm-lineage-link{margin-left:0;display:block}}
