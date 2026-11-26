@@ -1491,3 +1491,15 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 }
 
 .member-story-context{font-size:.86rem!important;line-height:1.55;color:#6a7780;margin:13px 0 0;padding-left:13px;border-left:2px solid #ccd5da}
+
+
+/* MEMBER STORY — HAROLD MUNNINGS III */
+.harold-directory-photo{background:#dbe2e8}
+.harold-directory-photo img{object-position:50% 24%}
+.member-harold-portrait{background:#cfd7dd}
+.member-harold-portrait img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:50% 24%;filter:contrast(1.02)}
+.member-harold-aside{margin-top:24px;padding:20px 22px;background:#edf3f5;border-left:4px solid var(--maroon)}
+.member-harold-aside small{display:block;font:800 .57rem Montserrat,sans-serif;letter-spacing:.13em;color:var(--maroon);margin-bottom:12px}
+.member-harold-aside strong{display:block;font:700 clamp(1.05rem,1.32vw,1.3rem)/1.45 Montserrat,sans-serif;color:#0e2d41;letter-spacing:-.015em}
+@media(max-width:850px){.member-harold-portrait img{max-width:none;max-height:none;object-position:50% 24%}}
+@media(max-width:520px){.member-harold-portrait img{max-height:none;object-position:50% 22%}.member-harold-aside{padding:18px}}
