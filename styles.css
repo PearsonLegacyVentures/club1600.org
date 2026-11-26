@@ -1489,3 +1489,5 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 @media(max-width:520px){
  .member-dwight-portrait img{max-height:none;object-position:50% 22%}
 }
+
+.member-story-context{font-size:.86rem!important;line-height:1.55;color:#6a7780;margin:13px 0 0;padding-left:13px;border-left:2px solid #ccd5da}
