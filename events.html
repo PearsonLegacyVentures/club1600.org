@@ -7,18 +7,68 @@
 </header>
 <main>
 <section class="page-hero events-page-hero"><div><span class="section-tag light">THE CALENDAR</span><h1>The club happens<br><em>in real life.</em></h1><p>Meetings are weekly. Growth also happens in contests, workshops, service projects, socials and signature events.</p></div></section>
-<section class="section event-calendar">
-  <div class="section-tag">2026–2027 PROGRAMME HIGHLIGHTS</div>
-  <div class="event-cards">
-    <article><time><b>OCT</b><span>22</span></time><div><small>COMPETITION</small><h3>Pitch Contest</h3><p>Three minutes. Clear value. No hiding behind slides.</p></div></article>
-    <article><time><b>NOV</b><span>05</span></time><div><small>SPECIAL PROGRAMME</small><h3>Health Panel</h3><p>A club programme built around practical conversation and audience engagement.</p></div></article>
-    <article><time><b>NOV</b><span>12</span></time><div><small>COMPETITION</small><h3>Speech Contest</h3><p>Prepared speakers test message, delivery and composure under contest pressure.</p></div></article>
-    <article><time><b>DEC</b><span>15</span></time><div><small>FELLOWSHIP</small><h3>Club Social</h3><p>Because development works better when people actually know each other.</p></div></article>
-    <article><time><b>JAN</b><span>07</span></time><div><small>MILESTONE</small><h3>Half-Time</h3><p>A mid-year checkpoint on the club year, goals and member progress.</p></div></article>
-    <article><time><b>MAR</b><span>20</span></time><div><small>SIGNATURE EVENT</small><h3>Annual Banquet</h3><p>Recognition, legacy and the people carrying 1600 forward.</p></div></article>
-    <article><time><b>MAY</b><span>22</span></time><div><small>TRADITION</small><h3>Boil Fish Run</h3><p>One of the club's fellowship traditions — because not every lesson needs a lectern.</p></div></article>
+
+<section class="section event-calendar" id="club-events" data-event-programme>
+  <div class="event-calendar-intro">
+    <div><span class="section-tag">2026–2027 CLUB CALENDAR</span><h2>What's on<br><em>at 1600.</em></h2></div>
+    <p>From contests and conversations to fellowship and the moments that shape our club year. Past events remain here as part of the record.</p>
   </div>
-  <p class="event-disclaimer">Programme dates and details can be updated by the executive as the club year develops.</p>
+
+  <section class="event-bucket" data-upcoming-bucket aria-labelledby="upcoming-events-heading">
+    <div class="event-bucket-head"><h3 id="upcoming-events-heading">Coming up</h3><span>UPCOMING EVENTS</span></div>
+    <div class="event-cards" data-upcoming-events>
+      <article class="event-item featured-panel" data-event-date="2026-11-26">
+        <time datetime="2026-11-26"><b>NOV</b><span>26</span><small>2026</small></time>
+        <div class="event-item-copy">
+          <div class="event-kicker"><small>SPECIAL PROGRAMME · PANEL DISCUSSION</small><span class="event-state" data-event-state>UPCOMING</span></div>
+          <h3>Health Panel</h3>
+          <p>Four perspectives on building a healthier, more financially secure future.</p>
+          <div class="event-panelists" aria-label="Featured Health Panel speakers and topics">
+            <div><strong>Dwight Burrows, DTM</strong><span>Wealth Management</span></div>
+            <div><strong>Wenrick Clarke</strong><span>Financial Empowerment</span></div>
+            <div><strong>Dr. Hughron Chase</strong><span>Health and Longevity</span></div>
+            <div><strong>Ms. Eileah Pearce</strong><span>Nutrition and Lifestyle</span></div>
+          </div>
+        </div>
+      </article>
+      <article class="event-item" data-event-date="2026-12-17">
+        <time datetime="2026-12-17"><b>DEC</b><span>17</span><small>2026</small></time>
+        <div class="event-item-copy">
+          <div class="event-kicker"><small>CHRISTMAS · CLUB MEETING</small><span class="event-state" data-event-state>UPCOMING</span></div>
+          <h3>Christmas Carolling Meeting</h3>
+          <p>A festive Club 1600 meeting centered on Christmas carols and fellowship.</p>
+        </div>
+      </article>
+      <article class="event-item" data-event-date="2026-12-18">
+        <time datetime="2026-12-18"><b>DEC</b><span>18</span><small>2026</small></time>
+        <div class="event-item-copy">
+          <div class="event-kicker"><small>CLUB FELLOWSHIP</small><span class="event-state" data-event-state>UPCOMING</span></div>
+          <h3>Q2 Club Social</h3>
+          <p>Club 1600's second-quarter social gathering.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="event-bucket event-bucket-past" data-past-bucket aria-labelledby="past-events-heading">
+    <div class="event-bucket-head"><h3 id="past-events-heading">Earlier this club year</h3><span>2026 HIGHLIGHTS</span></div>
+    <div class="event-cards" data-past-events>
+      <article class="event-item" data-event-date="2026-11-19">
+        <time datetime="2026-11-19"><b>NOV</b><span>19</span><small>2026</small></time>
+        <div class="event-item-copy"><div class="event-kicker"><small>CLUB COMPETITION</small><span class="event-state" data-event-state>PAST EVENT</span></div><h3>In-Club Speech Contest</h3><p>Club 1600's in-club speech competition.</p></div>
+      </article>
+      <article class="event-item" data-event-date="2026-10-03">
+        <time datetime="2026-10-03"><b>OCT</b><span>03</span><small>2026</small></time>
+        <div class="event-item-copy"><div class="event-kicker"><small>CLUB FELLOWSHIP</small><span class="event-state" data-event-state>PAST EVENT</span></div><h3>Q1 Club Social</h3><p>The first-quarter Club 1600 social.</p></div>
+      </article>
+      <article class="event-item" data-event-date="2026-10-01">
+        <time datetime="2026-10-01"><b>OCT</b><span>01</span><small>2026</small></time>
+        <div class="event-item-copy"><div class="event-kicker"><small>SPECIAL CLUB MEETING</small><span class="event-state" data-event-state>PAST EVENT</span></div><h3>Meeting at the Office of the Prime Minister</h3><p>A special Club 1600 meeting held at the Office of the Prime Minister.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <p class="event-disclaimer">Programme details are subject to updates from the Club 1600 Executive. Event times and venues are not listed where they have not been confirmed.</p>
 </section>
 <section class="event-weekly"><div><small>EVERY THURSDAY</small><h2>The most important event<br>is still the meeting.</h2><a class="btn yellow" href="visit.html">Plan a visit →</a></div></section>
 </main><footer class="site-footer">
