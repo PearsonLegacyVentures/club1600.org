@@ -1426,3 +1426,29 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
  .member-directory-copy>span{margin-top:17px;font-size:.56rem}
  .member-rose-aside{padding:17px 18px}
 }
+
+
+/* MEMBER STORIES — THIRD PROFILE AND OPEN-ENDED DIRECTORY */
+.member-directory-card:last-child:nth-child(odd){grid-column:1 / -1;grid-template-columns:minmax(230px,32%) minmax(0,1fr);min-height:255px}
+.member-directory-card:last-child:nth-child(odd) .member-directory-portrait{min-height:255px}
+.member-directory-pending,.member-deangelo-pending{position:relative;isolation:isolate;background:radial-gradient(circle at 46% 38%,#1c536c 0%,#003e60 45%,#091a29 100%);overflow:hidden}
+.member-directory-pending:before,.member-deangelo-pending:before{content:"1600";position:absolute;bottom:-10%;left:-7%;font:900 clamp(7rem,17vw,19rem)/1 Montserrat,sans-serif;letter-spacing:-.12em;color:rgba(255,255,255,.035);white-space:nowrap;pointer-events:none;z-index:0}
+.member-directory-pending{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px}
+.member-directory-pending .member-directory-monogram{position:relative;z-index:1;font:900 clamp(5rem,10vw,9rem)/1 Montserrat,sans-serif;letter-spacing:-.12em;color:rgba(255,255,255,.87);text-shadow:0 15px 35px rgba(0,0,0,.18)}
+.member-directory-pending small{position:relative;z-index:1;font:800 .54rem Montserrat,sans-serif;letter-spacing:.17em;color:var(--yellow)}
+.member-deangelo-pending{display:flex;align-items:center;justify-content:center}
+.member-deangelo-pending .member-pending-monogram{position:relative;z-index:1;font:900 clamp(9rem,16vw,18rem)/1 Montserrat,sans-serif;letter-spacing:-.12em;color:rgba(255,255,255,.7);transform:translateY(-18px)}
+.member-deangelo-pending:after{z-index:1}
+.member-deangelo-pending figcaption{z-index:2}
+@media(max-width:850px){
+ .member-directory-card:last-child:nth-child(odd){grid-column:auto;grid-template-columns:40% 60%;min-height:270px}
+ .member-directory-card:last-child:nth-child(odd) .member-directory-portrait{min-height:270px}
+ .member-directory-pending .member-directory-monogram{font-size:clamp(5rem,13vw,8rem)}
+ .member-deangelo-pending .member-pending-monogram{font-size:clamp(9rem,24vw,15rem)}
+}
+@media(max-width:520px){
+ .member-directory-card:last-child:nth-child(odd){min-height:235px}
+ .member-directory-card:last-child:nth-child(odd) .member-directory-portrait{min-height:235px}
+ .member-directory-pending .member-directory-monogram{font-size:5rem}
+ .member-deangelo-pending .member-pending-monogram{font-size:9rem}
+}
