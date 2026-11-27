@@ -1505,6 +1505,20 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
 @media(max-width:520px){.member-harold-portrait img{max-height:none;object-position:50% 22%}.member-harold-aside{padding:18px}}
 
 
+/* MEMBER STORY — ANTOINNE CONLIFFE: MEETING PORTRAIT */
+.antoinne-directory-photo{background:#102d40}
+.antoinne-directory-photo img{object-fit:cover;object-position:48% 38%}
+.member-antoinne-portrait{position:relative;display:block;min-height:570px;padding:0;background:#122e3d;overflow:hidden}
+.member-antoinne-portrait img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:50% 36%;border:0;box-shadow:none;filter:contrast(1.02)}
+.member-antoinne-portrait figcaption{z-index:2}
+@media(max-width:850px){
+ .member-antoinne-portrait{min-height:450px;padding:0}
+ .member-antoinne-portrait img{max-width:none;max-height:none;object-position:50% 36%}
+}
+@media(max-width:520px){
+ .member-antoinne-portrait{min-height:355px;padding:0}
+ .member-antoinne-portrait img{max-width:none;max-height:none;object-position:49% 35%}
+}
 /* MEMBER STORY — ANTOINNE CONLIFFE */
 .antoinne-directory-photo{background:linear-gradient(155deg,#e9edef,#1f4051)}
 .antoinne-directory-photo img{object-fit:cover;object-position:50% 45%}
