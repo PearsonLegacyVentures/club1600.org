@@ -1519,17 +1519,3 @@ url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fi
  .member-antoinne-portrait{min-height:355px;padding:0}
  .member-antoinne-portrait img{max-width:none;max-height:none;object-position:49% 35%}
 }
-/* MEMBER STORY — ANTOINNE CONLIFFE */
-.antoinne-directory-photo{background:linear-gradient(155deg,#e9edef,#1f4051)}
-.antoinne-directory-photo img{object-fit:cover;object-position:50% 45%}
-.member-antoinne-portrait{background:radial-gradient(ellipse at 50% 40%,#28526b 0%,#0b2839 56%,#061923 100%);display:flex;align-items:center;justify-content:center;padding:50px 34px 115px}
-.member-antoinne-portrait img{position:relative;width:100%;max-width:470px;max-height:none;height:auto;object-fit:contain;object-position:center;border:5px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.27);filter:contrast(1.03)}
-.member-antoinne-portrait figcaption{z-index:2}
-@media(max-width:850px){
- .member-antoinne-portrait{padding:35px 25px 95px;min-height:450px}
- .member-antoinne-portrait img{max-width:390px;max-height:none}
-}
-@media(max-width:520px){
- .member-antoinne-portrait{min-height:355px;padding:25px 22px 92px}
- .member-antoinne-portrait img{max-width:270px;max-height:none}
-}
